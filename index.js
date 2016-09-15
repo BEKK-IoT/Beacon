@@ -1,9 +1,9 @@
-var Bleacon = require('./lib/bleacon');
+var Beacon = require('./lib/beacon');
 
-var bleacon = new Bleacon();
+var beacon = new Beacon();
 
-bleacon.BleuStation = require('./bleu-station/bleu-station');
-bleacon.Estimote = require('./estimote/estimote');
-bleacon.EstimoteSticker = require('./estimote-sticker/estimote-sticker');
+beacon.BleuStation = require('./bleu-station/bleu-station');
+beacon.Estimote = require('./estimote/estimote');
+beacon.EstimoteSticker = require('./estimote-sticker/estimote-sticker');
 
-module.exports = bleacon;
+module.exports = beacon;

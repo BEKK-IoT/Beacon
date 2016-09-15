@@ -1,10 +1,10 @@
-var Bleacon = require('./index');
+var Beacon = require('./index');
 
-Bleacon.startAdvertising('e2c56db5dffb48d2b060d0f5a71096e0', 0, 0, -59);
+Beacon.startAdvertising('e2c56db5dffb48d2b060d0f5a71096e0', 0, 0, -59);
 
-Bleacon.on('discover', function(bleacon) {
-  console.log('bleacon found: ' + JSON.stringify(bleacon));
+Beacon.on('discover', function(Beacon) {
+  console.log('Beacon found: ' + JSON.stringify(Beacon));
 });
 
-Bleacon.startScanning(/*'e2c56db5dffb48d2b060d0f5a71096e0', 0, 0*/);
+Beacon.startScanning(/*'e2c56db5dffb48d2b060d0f5a71096e0', 0, 0*/);
 
